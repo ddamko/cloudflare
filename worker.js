@@ -1,27 +1,27 @@
 addEventListener('fetch', event => {
     const url = new URL(event.request.url);
   
-    // Route /bab/* to bab.pages.dev
+    // Route /bab/* to bab.soydev.life
     if (url.pathname.startsWith('/bab/')) {
-      const newUrl = `https://bab.pages.dev${url.pathname.replace('/bab', '')}${url.search}`;
+      const newUrl = `https://bab.soydev.life${url.pathname.replace('/bab', '')}${url.search}`;
       return event.respondWith(fetch(newUrl, event.request));
     }
   
-    // Route /bsw/* to bsw.pages.dev
+    // Route /bsw/* to bsw.soydev.life
     if (url.pathname.startsWith('/bsw/')) {
-      const newUrl = `https://bsw.pages.dev${url.pathname.replace('/bsw', '')}${url.search}`;
+      const newUrl = `https://bsw.soydev.life${url.pathname.replace('/bsw', '')}${url.search}`;
       return event.respondWith(fetch(newUrl, event.request));
     }
 
-    // Route /pic/* to pic.pages.dev
+    // Route /pic/* to pic.soydev.life
     if (url.pathname.startsWith('/pic/')) {
-      const newUrl = `https://pic.pages.dev${url.pathname.replace('/pic', '')}${url.search}`;
+      const newUrl = `https://pic.soydev.life${url.pathname.replace('/pic', '')}${url.search}`;
       return event.respondWith(fetch(newUrl, event.request));
     }
 
-    // Route /wms/* to wms.pages.dev
+    // Route /wms/* to wms.soydev.life
     if (url.pathname.startsWith('/wms/')) {
-      const newUrl = `https://wms.pages.dev${url.pathname.replace('/wms', '')}${url.search}`;
+      const newUrl = `https://wms.soydev.life${url.pathname.replace('/wms', '')}${url.search}`;
       return event.respondWith(fetch(newUrl, event.request));
     }
   
